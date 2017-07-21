@@ -5,6 +5,7 @@ var m = require("mithril")
 var UserList = require("./views/UserList")
 var UserForm = require("./views/UserForm")
 var Layout = require("./views/Layout")
+var Patient = require('./models/Patient');
 
 m.route(document.body, "/list", {
     "/list": {

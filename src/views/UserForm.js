@@ -16,16 +16,16 @@ module.exports = {
             m("label.label", "First name"),
             m("input.input[type=text][placeholder=First name]", {
                 oninput: m.withAttr('value', function(value) {
-                    User.current.firstName = value;
+                    User.current.prenom = value;
                 }),
-                value: User.current.firstName
+                value: User.current.prenom
             }),
             m("label.label", "Last name"),
             m("input.input[placeholder=Last name]", {
                 oninput: m.withAttr('value', function(value) {
-                    User.current.lastName = value;
+                    User.current.nom = value;
                 }),
-                value: User.current.lastName
+                value: User.current.nom
             }),
             m("button.button[type=submit]", "Save"),
         ])
